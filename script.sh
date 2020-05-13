@@ -10,7 +10,8 @@ for SOFTWARE in ${SOFTWARES}; do
 done
 
 # Set variables
-DIR_ISTAT=/tmp/ISTAT
+DIR_WORK=$( cd $(dirname $0) ; pwd)
+DIR_ISTAT=${DIR_WORK}/ISTAT
 URL_ISTAT_DATA="http://www.istat.it/storage/cartografia/confini_amministrativi/non_generalizzati/Limiti01012020.zip"
 FILE_ISTAT_ZIP=$( basename ${URL_ISTAT_DATA} )
 DIR_ISTAT_DATA=$( echo ${FILE_ISTAT_ZIP} | sed 's/\.zip//' )

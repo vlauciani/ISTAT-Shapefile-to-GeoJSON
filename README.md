@@ -1,5 +1,5 @@
 # ISTAT-Shapefile-to-GeoJSON
-Converte gli Shapefile del *2020* della *versione non generalizzata (piu' dettagliata)* presenti sul sito dell'ISTAT qui:
+Converte gli Shapefile del *2020* della *versione non generalizzata (piu' dettagliata)* presenti sul sito dell'ISTAT:
 - https://www.istat.it/it/archivio/222527
 
 in GeoJSON.

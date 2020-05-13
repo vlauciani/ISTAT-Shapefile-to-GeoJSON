@@ -49,7 +49,7 @@ Archive:  Limiti01012020.zip
   inflating: Limiti01012020/RipGeo01012020/RipGeo01012020_WGS84.shx
 
  1/4 - Converting "Com01012020_WGS84.shp" to "Com01012020_WGS84.geojson":
-  time docker run -it -v /Users/valentino/Desktop/gitwork/github/_vlauciani/ISTAT-Shapefile-to-GeoJSON/ISTAT/Limiti01012020/Com01012020:/data geographica/gdal2:2.4.0 bash -c "ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/Com01012020_WGS84.geojson /data/Com01012020_WGS84.shp"
+  time docker run -it -v $(pwd)/ISTAT-Shapefile-to-GeoJSON/ISTAT/Limiti01012020/Com01012020:/data geographica/gdal2:2.4.0 bash -c "ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/Com01012020_WGS84.geojson /data/Com01012020_WGS84.shp"
 
 real	0m40.103s
 user	0m0.045s
@@ -57,7 +57,7 @@ sys	0m0.108s
  Done
 
  2/4 - Converting "ProvCM01012020_WGS84.shp" to "ProvCM01012020_WGS84.geojson":
-  time docker run -it -v /Users/valentino/Desktop/gitwork/github/_vlauciani/ISTAT-Shapefile-to-GeoJSON/ISTAT/Limiti01012020/ProvCM01012020:/data geographica/gdal2:2.4.0 bash -c "ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/ProvCM01012020_WGS84.geojson /data/ProvCM01012020_WGS84.shp"
+  time docker run -it -v $(pwd)/ISTAT-Shapefile-to-GeoJSON/ISTAT/Limiti01012020/ProvCM01012020:/data geographica/gdal2:2.4.0 bash -c "ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/ProvCM01012020_WGS84.geojson /data/ProvCM01012020_WGS84.shp"
 
 real	0m7.105s
 user	0m0.038s
@@ -65,7 +65,7 @@ sys	0m0.020s
  Done
 
  3/4 - Converting "Reg01012020_WGS84.shp" to "Reg01012020_WGS84.geojson":
-  time docker run -it -v /Users/valentino/Desktop/gitwork/github/_vlauciani/ISTAT-Shapefile-to-GeoJSON/ISTAT/Limiti01012020/Reg01012020:/data geographica/gdal2:2.4.0 bash -c "ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/Reg01012020_WGS84.geojson /data/Reg01012020_WGS84.shp"
+  time docker run -it -v $(pwd)/ISTAT-Shapefile-to-GeoJSON/ISTAT/Limiti01012020/Reg01012020:/data geographica/gdal2:2.4.0 bash -c "ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/Reg01012020_WGS84.geojson /data/Reg01012020_WGS84.shp"
 
 real	0m4.730s
 user	0m0.038s
@@ -73,7 +73,7 @@ sys	0m0.023s
  Done
 
  4/4 - Converting "RipGeo01012020_WGS84.shp" to "RipGeo01012020_WGS84.geojson":
-  time docker run -it -v /Users/valentino/Desktop/gitwork/github/_vlauciani/ISTAT-Shapefile-to-GeoJSON/ISTAT/Limiti01012020/RipGeo01012020:/data geographica/gdal2:2.4.0 bash -c "ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/RipGeo01012020_WGS84.geojson /data/RipGeo01012020_WGS84.shp"
+  time docker run -it -v $(pwd)/ISTAT-Shapefile-to-GeoJSON/ISTAT/Limiti01012020/RipGeo01012020:/data geographica/gdal2:2.4.0 bash -c "ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/RipGeo01012020_WGS84.geojson /data/RipGeo01012020_WGS84.shp"
 
 real	0m4.025s
 user	0m0.034s

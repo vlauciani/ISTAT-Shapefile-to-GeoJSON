@@ -89,3 +89,6 @@ $ ls -l ISTAT/Limiti01012020/*/*.geojson
 $
 $
 ```
+
+## Esempio
+![Regioni](images/Screenshot_1.png)

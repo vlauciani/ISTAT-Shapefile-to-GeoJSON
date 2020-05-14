@@ -38,7 +38,7 @@ for DIR in $(ls -d ${DIR_ISTAT_DATA}/*); do
 	FILE_SHAPE=$( basename ${DIR} )_WGS84.shp
 	FILE_GEOJSON=$( basename ${DIR} )_WGS84.geojson
 	echo " ${COUNT}/${N_DIRS} - Converting \"${FILE_SHAPE}\" to \"${FILE_GEOJSON}\":" 
-	COMMAND="time docker run -it -v $(pwd)/${DIR}:/data geographica/gdal2:2.4.0 bash -c \"ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/${FILE_GEOJSON} /data/${FILE_SHAPE}\""
+	COMMAND="time docker run -it --rm -v $(pwd)/${DIR}:/data geographica/gdal2:2.4.0 bash -c \"ogr2ogr -f GeoJSON -t_srs EPSG:4326 /data/${FILE_GEOJSON} /data/${FILE_SHAPE}\""
 	echo "  ${COMMAND}"
 	eval ${COMMAND}
 	echo " Done"
